@@ -1,9 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import math
-
 deg = 24
-
 points = np.random.rand(2**deg + 1, 2)
 dist = np.sum((points-0.5)**2, axis = -1)
 mask = dist < 0.25
